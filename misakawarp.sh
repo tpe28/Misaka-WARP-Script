@@ -1189,6 +1189,7 @@ warpnf(){
         3 ) wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/warp-cli/netfilxcli.sh && bash netfilxcli.sh ;;
         4 ) wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/wireproxy-warp/netfilx-wireproxy.sh && bash netfilx-wireproxy.sh ;;
     esac
+    # 1145141919810 下北泽
 }
 
 menu(){
