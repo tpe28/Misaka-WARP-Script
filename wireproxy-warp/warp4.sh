@@ -53,7 +53,7 @@ archAffix(){
 }
 
 install_wgcf(){
-    wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/Misaka-blog/Misaka-WARP-Script/files/wgcf_latest_linux_$(archAffix) -O /usr/local/bin/wgcf
+    wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/files/wgcf_latest_linux_$(archAffix) -O /usr/local/bin/wgcf
     chmod +x /usr/local/bin/wgcf
 }
 
@@ -162,15 +162,15 @@ TEXT
 
 download_wireproxy(){
     if [[ $arch == "amd64" || $arch == "x86_64" ]]; then
-        wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/Misaka-blog/Misaka-WARP-Script/files/wireproxy-amd64 -O /usr/local/bin/wireproxy
+        wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/files/wireproxy-amd64 -O /usr/local/bin/wireproxy
         chmod +x /usr/local/bin/wireproxy
     fi
     if [[ $arch == "armv8" || $arch == "arm64" || $arch == "aarch64" ]]; then
-        wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/Misaka-blog/Misaka-WARP-Script/files/wireproxy-arm64 -O /usr/local/bin/wireproxy
+        wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/files/wireproxy-arm64 -O /usr/local/bin/wireproxy
         chmod +x /usr/local/bin/wireproxy
     fi
     if [[ $arch == "s390x" ]]; then
-        wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/Misaka-blog/Misaka-WARP-Script/files/wireproxy-s390x -O /usr/local/bin/wireproxy
+        wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/files/wireproxy-s390x -O /usr/local/bin/wireproxy
         chmod +x /usr/local/bin/wireproxy
     fi
 }
