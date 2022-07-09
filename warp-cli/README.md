@@ -38,7 +38,7 @@ wget -N https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/warp-
 ### 刷Netfilx IP
 
 ```shell
-wget -N https://raw.githubusercontents.com/Misaka-blog/Misaka-WARP-Script/master/warp-cli/netfilxcli.sh && bash netfilxcli.sh
+# wget -N https://raw.githubusercontents.com/Misaka-blog/Misaka-WARP-Script/master/warp-cli/netfilxcli.sh && bash netfilxcli.sh
 wget -N https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/warp-cli/netfilxcli.sh && bash netfilxcli.sh
 ```
 
