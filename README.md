@@ -2,16 +2,18 @@
 
 支持手工菜单+全自动化脚本安装。支持AMD64、ARM64和S390X CPU架构的VPS、支持KVM、ZVM、OpenVZ和LXC虚拟化架构的VPS
 
-已集成至：https://github.com/Misaka-blog/Xray-script
+已集成至：~~https://github.com/Misaka-blog/Xray-script~~  
+*请使用可用的仓库: https://github.com/tpe28/Xray-script*
 
 如对脚本不放心，可使用此沙箱先测一遍再使用：https://killercoda.com/playgrounds/scenario/ubuntu
 
-详细讲解视频：7月份会出
+详细讲解视频：~~7月份会出~~ *让我们为misaka献上一句 **阿门** 永远咕了*
 
 ## 使用方法
 
 ```shell
-wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/Misaka-WARP-Script/master/misakawarp.sh && bash misakawarp.sh
+# wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/Misaka-WARP-Script/master/misakawarp.sh && bash misakawarp.sh
+wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/misakawarp.sh && bash misakawarp.sh
 ```
 
 快捷方式 `bash misakawarp.sh`
@@ -46,9 +48,11 @@ https://p3terx.com/archives/use-cloudflare-warp-to-add-extra-ipv4-or-ipv6-networ
 
 ## WARP+或WARP Teams账户获取
 
-WARP+：https://owo.misaka.rest/cfwarp-plus/
+WARP+：~~https://owo.misaka.rest/cfwarp-plus/~~ *已失效*  
+*请通过 https://web.archive.org/web/20220623052100/https://owo.misaka.rest/cfwarp-plus/ 浏览* 
 
-WARP Teams：https://owo.misaka.rest/cf-teams/
+WARP Teams：~~https://owo.misaka.rest/cf-teams/~~ *已失效*  
+*请通过 https://web.archive.org/web/20220623052037/https://owo.misaka.rest/cf-teams/ 浏览* 
 
 ## 常见问题
 
@@ -82,8 +86,9 @@ WARP Teams：https://owo.misaka.rest/cf-teams/
 
 ![afdian-MisakaNo.jpg](https://s2.loli.net/2021/12/25/SimocqwhVg89NQJ.jpg)
 
-## 交流群
-[Telegram](https://t.me/misakanetcn)
+## ~~交流群~~ 墓碑
+~~[Telegram] (https://t.me/misakanetcn)~~  
+[Telegram Channel](https://t.me/misakano)
 
 ## 鸣谢列表
 
