@@ -56,7 +56,8 @@ check_tun(){
     TUN=$(cat /dev/net/tun 2>&1 | tr '[:upper:]' '[:lower:]')
     if [[ ! $TUN =~ 'in bad state' ]] && [[ ! $TUN =~ '处于错误状态' ]] && [[ ! $TUN =~ 'Die Dateizugriffsnummer ist in schlechter Verfassung' ]]; then
         if [[ $vpsvirt == "openvz" ]]; then
-            wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/tun-script/master/tun.sh && bash tun.sh
+            # wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/tun-script/master/tun.sh && bash tun.sh
+            wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/tun-script/master/tun.sh && bash tun.sh
         else
             red "检测到未开启TUN模块，请到VPS控制面板处开启" 
             exit 1
@@ -118,17 +119,20 @@ install_wireguard(){
     [[ $SYSTEM == Debian ]] && install_wireguard_debian
     [[ $SYSTEM == Ubuntu ]] && install_wireguard_ubuntu
     if [[ $vpsvirt =~ lxc|openvz ]]; then
-        wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/Misaka-blog/Misaka-WARP-Script/files/wireguard-go -O /usr/bin/wireguard-go
+        # wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/Misaka-blog/Misaka-WARP-Script/files/wireguard-go -O /usr/bin/wireguard-go
+        wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/files/wireguard-go -O /usr/bin/wireguard-go
         chmod +x /usr/bin/wireguard-go
     fi
     if [[ $vpsvirt == zvm ]]; then
-        wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/Misaka-blog/Misaka-WARP-Script/files/wireguard-go-s390x -O /usr/bin/wireguard-go
+        # wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/Misaka-blog/Misaka-WARP-Script/files/wireguard-go-s390x -O /usr/bin/wireguard-go
+        wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/files/wireguard-go-s390x -O /usr/bin/wireguard-go
         chmod +x /usr/bin/wireguard-go
     fi
 }
 
 install_wgcf(){
-    wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/Misaka-blog/Misaka-WARP-Script/files/wgcf_latest_linux_$(archAffix) -O /usr/local/bin/wgcf
+    # wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/Misaka-blog/Misaka-WARP-Script/files/wgcf_latest_linux_$(archAffix) -O /usr/local/bin/wgcf
+    wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/files/wgcf_latest_linux_$(archAffix) -O /usr/local/bin/wgcf
     chmod +x /usr/local/bin/wgcf
 }
 
