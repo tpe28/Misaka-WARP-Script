@@ -1,5 +1,4 @@
 #!/bin/bash
-
 export LANG=en_US.UTF-8
 
 RED="\033[31m"
