@@ -13,7 +13,7 @@
 
 ```shell
 # wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/Misaka-WARP-Script/master/misakawarp.sh && bash misakawarp.sh
-wget -N --no-check-certificate https://raw.githubusercontents.com/tpe28/Misaka-WARP-Script/master/misakawarp.sh && bash misakawarp.sh
+wget -N --no-check-certificate https://github.com/tpe28/Misaka-WARP-Script/releases/download/release/misakawarp.sh && bash misakawarp.sh
 ```
 
 快捷方式 `bash misakawarp.sh`
